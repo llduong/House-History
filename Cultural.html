@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Cultural</title>
+<link rel="stylesheet" href="CSS/StyleCultural.css" />
+<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+<link rel="icon" href="IMG/Icon.png" />
+</head>
+
+<body>
+<article>
+	<a href="Index.html"><img class="Logo" src="IMG/symbol1.png" /></a>
+			<a href="Index.html"><img class="HHLogo" src="IMG/hh-logo.png" /></a>
+			<div class="Advertise">
+				<ul>
+					<li>Employment</li>
+					<li>Practice culture</li>
+					<li>Terms</li>
+					<li>Site map</li>
+					<li>Contact us</li>
+				</ul>
+				<img id="riba" src="IMG/footer-riba.png" style="width: 82px; height: 18px;"/>
+				<div id="contact">
+                        <div id="twitter" >
+                            <img src="IMG/twitter.png">
+                        </div>
+                        <div id="facebook">
+                            <i class="fa fa-facebook"></i>
+                        </div>
+                        <div id="behance">
+                            <i class="fa fa-behance"></i>
+                        </div>
+                        <div id="flickr">
+                            <img src="IMG/flickr.png">
+                        </div>
+                        <div id="pinterest">
+                            <i class="fa fa-pinterest-p"></i>
+                        </div>
+                        <div id="instagram">
+                            <i class="fa fa-instagram"></i>
+                        </div>
+                 </div>
+				<p>Copyright&#169;2006–2018 </p>
+				<p>Hyde + Hyde Architects</p>
+			</div>
+</article>
+<aside>
+	<div class="Menu">
+			<ul>
+				<li><a href="About.html">About</a>
+					<ul class="SubMenu">
+						<li><a href="People.html">People</a></li>
+						<li><a href="Sustainability.html">Sustainability</a></li>
+					</ul>
+				</li>
+				<li><a href="Projects.html">Projects</a>
+					<ul class="SubMenu">
+						<li><a href="Commercial.html">Commercial</a></li>
+						<li><a href="Cultural.html">Cultural</a></li>
+						<li><a href="Residental.html">Residental</a></li>
+					</ul>
+				</li>
+				<li><a href="Recognition.html">Recognition</a>
+					<ul class="SubMenu">
+						<li><a href="Award.html">Awards</a></li>
+						<li><a href="Exhibitions.html">Exhibitions</a></li>
+						<li><a href="Publications.html">Publications</a></li>
+					</ul>
+				</li>
+<!--
+				<li><a href="#">Blog</a>
+					<ul class="SubMenu">
+						<li><a href="#">Latest News</a></li>
+						<li><a href="#">Reaching/Teaching</a></li>
+					</ul>
+				</li>
+-->
+				<li><a href="Contact.html">Contact</a></li>
+			</ul>
+		</div>
+		<div class="UnderMenu">
+			<p>We create opportunities for collaboration between people working in the cultural sector.</p>
+		</div>
+		<div id="Image">
+			<div class="House">
+				<img src="IMG/Project/Cultural/Alvar Aalto Museum/01.jpg" />
+				<h3>Alvar Aalto Museum</h3>
+				<p>The building presents itself as a series of discrete elements, subservient yet in dynamic equilibrium with its adjacent counterparts.</p>
+				<p>Hollow glass, cylindrical facade elements continue the theme of the light fragile ceramic tiles or ‘Halla’ found on the existing adjacent facade. This material sensitivity was a notable enrichment of Alvar Aalto’s formal language as the 1950’s approached.</p><br>
+				<a href="AlvarAaltoMuseum.html">See more</a>
+			</div>
+			<div class="House">
+				<img src="IMG/Project/Cultural/Ghost train/01.jpg" />
+				<h3>Ghost Train</h3>
+				<p>Imagine something which was once lost, a railway bridge that was once critical to the prosperity of a city.</p>
+				<p>Like a ghost – the new proposal with an exciting programme and unique form, captures the spirit and movement of the coal trains that once passed alongside it.</p><br>
+				<a href="GhostTrain.html">See more</a>
+			</div>
+			<div class="House">
+				<img src="IMG/Project/Cultural/Moor Cafe Bar/01.jpg" />
+				<h3>Moor Cafe Bar</h3>
+				<p>Whilst local residents have gratefully embraced a newly created bay, the River Taff itself has been largely overlooked despite running through the centre of the Welsh capital.</p>
+				<p>The terminating sky frame captures an outdoor performance space reinforcing a confident linear form that sits in harmony with the horizontal banks of the River Taff.</p><br>
+				<a href="MoorCafeBar.html">See more</a>
+			</div>
+			<div class="House">
+				<img src="IMG/Project/Cultural/Slip bridge/01.jpg" />
+				<h3>The Slip Bridge</h3>
+				<p>A hub of activity, coffee, theatre, film, cake, art, dance, a garden…what do you want the slip to be? An adaptable cultural hub in the city that is flexible to accommodate the cities needs for generations</p>
+				<p>A typical day in the slip: 9am mother toddler group. 11am yoga. 1pm knitters circle. 5pm brownies. 7pm life drawing.</p><br>
+				<a href="TheSlipBridge.html">See more</a>
+			</div>
+		</div>
+	</aside>
+	<button id="myBtn" title="Go to top"></button>
+	<script>
+        //Khi người dùng cuộn chuột thì gọi hàm scrollFunction
+        window.onscroll = function() {scrollFunction()};
+        // khai báo hàm scrollFunction
+        function scrollFunction() {
+            // Kiểm tra vị trí hiện tại của con trỏ so với nội dung trang
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                //nếu lớn hơn 20px thì hiện button
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                 //nếu nhỏ hơn 20px thì ẩn button
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+        //gán sự kiện click cho button
+        document.getElementById('myBtn').addEventListener("click", function(){
+            //Nếu button được click thì nhảy về đầu trang
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        });
+    </script>
+</body>
+</html>

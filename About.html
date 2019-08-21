@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>About</title>
+<link rel="stylesheet" href="CSS/StyleAbout.css"/>
+<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+<link rel="icon" href="IMG/Icon.png" />
+</head>
+
+<body>
+<article>
+	<a href="Index.html"><img class="Logo" src="IMG/symbol1.png" /></a>
+			<a href="Index.html"><img class="HHLogo" src="IMG/hh-logo.png" /></a>
+			<div class="Advertise">
+				<ul>
+					<li>Employment</li>
+					<li>Practice culture</li>
+					<li>Terms</li>
+					<li>Site map</li>
+					<li>Contact us</li>
+				</ul>
+				<img id="riba" src="IMG/footer-riba.png" style="width: 82px; height: 18px;" />
+				<div id="contact">
+                        <div id="twitter" >
+                            <img src="IMG/twitter.png">
+                        </div>
+                        <div id="facebook">
+                            <i class="fa fa-facebook"></i>
+                        </div>
+                        <div id="behance">
+                            <i class="fa fa-behance"></i>
+                        </div>
+                        <div id="flickr">
+                            <img src="IMG/flickr.png">
+                        </div>
+                        <div id="pinterest">
+                            <i class="fa fa-pinterest-p"></i>
+                        </div>
+                        <div id="instagram">
+                            <i class="fa fa-instagram"></i>
+                        </div>
+                 </div>
+				<p>Copyright&#169;2006–2018 </p>
+				<p>Hyde + Hyde Architects</p>
+			</div>
+</article>
+<aside>
+	<div class="Menu">
+			<ul>
+				<li><a href="About.html">About</a>
+					<ul class="SubMenu">
+						<li><a href="People.html">People</a></li>
+						<li><a href="Sustainability.html">Sustainability</a></li>
+					</ul>
+				</li>
+				<li><a href="Projects.html">Projects</a>
+					<ul class="SubMenu">
+						<li><a href="Commercial.html">Commercial</a></li>
+						<li><a href="Cultural.html">Cultural</a></li>
+						<li><a href="Residental.html">Residental</a></li>
+					</ul>
+				</li>
+				<li><a href="Recognition.html">Recognition</a>
+					<ul class="SubMenu">
+						<li><a href="Award.html">Awards</a></li>
+						<li><a href="Exhibitions.html">Exhibitions</a></li>
+						<li><a href="Publications.html">Publications</a></li>
+					</ul>
+				</li>
+<!--
+				<li><a href="#">Blog</a>
+					<ul class="SubMenu">
+						<li><a href="#">Latest News</a></li>
+						<li><a href="#">Reaching/Teaching</a></li>
+					</ul>
+				</li>
+-->
+				<li><a href="Contact.html">Contact</a></li>
+			</ul>
+		</div>
+		<div class="UnderMenu">
+			<p>Hyde + Hyde Architects are a progressive award winning architecture practice with work across the UK and Europe.</p>
+		</div>
+		<div class="content">
+			<div class="Paragraph">
+				<br><p>For more than a decade we have been working with discerning clients across the UK and abroad to conceive, create, and express deeply thoughtful buildings.</p>
+				<h4>Our work has been featured in the Sunday Times, Guardian, Daily Telegraph, Grand Designs Magazine and has won numerous local and national awards.</h4>
+				<h4>The start of something beautiful…</h4>
+				<p>Many of our clients have been with us for years. Long relationships are a testament to our service and commitment.</p>
+				<h4>People</h4>
+				<p>To ensure quality and consistency – our team work closely with our clients. You can expect to see the same faces from initial design to work on site.</p>
+			</div>
+			<div class="Paragraph">
+				<h4>Process</h4>
+				<p>Each project for us is unique and reflects an understanding of the varied circumstances of our clients. Architectural designs are developed using innovative materials, advanced structural strategies and sustainable technologies.</p>
+				<h4>Teaching</h4>
+				<p>Both directors teach at the Welsh School of Architecture in Cardiff and the University of Bath.</p>
+				<h4>Accreditation</h4>
+				<p>We are a ‘Royal Institute of British Architects’ Chartered Registered Practice.</p>
+			</div>
+			<div class="Paragraph">
+				<h4>Guidance + Publications</h4>
+				<p><a href="#">+RIBA Guidance Documents</a></p>
+				<p><a href="#">+Working with an Architect</a></p>
+				<p><a href="#">+Outline Plan of Work PDF</a></p>
+				<h4>Industry Links</h4>
+				<p><a href="#">+RIBA</a></p>
+				<p><a href="#">+RSAW</a></p>
+				<p><a href="#">+ARB</a></p>
+				<h4>Government Links</h4>
+				<p><a href="#">+Planning Portal</a></p>
+				<p><a href="#">+Building Regulations</a></p>
+			</div>
+		</div>
+		<button id="myBtn" title="Go to top"></button>
+		<script>
+        //Khi người dùng cuộn chuột thì gọi hàm scrollFunction
+        window.onscroll = function() {scrollFunction()};
+        // khai báo hàm scrollFunction
+        function scrollFunction() {
+            // Kiểm tra vị trí hiện tại của con trỏ so với nội dung trang
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                //nếu lớn hơn 20px thì hiện button
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                 //nếu nhỏ hơn 20px thì ẩn button
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+        //gán sự kiện click cho button
+        document.getElementById('myBtn').addEventListener("click", function(){
+            //Nếu button được click thì nhảy về đầu trang
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        });
+    </script>	
+</aside>
+</body>
+</html>

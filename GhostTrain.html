@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>The Ghost Train</title>
+<link rel="stylesheet" href="CSS/StyleGhostTrain.css" />
+<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+<link rel="icon" href="IMG/Icon.png" />
+</head>
+
+<body>
+<article>
+	<a href="Index.html"><img class="Logo" src="IMG/symbol1.png" /></a>
+			<a href="Index.html"><img class="HHLogo" src="IMG/hh-logo.png" /></a>
+			<div class="Advertise">
+				<ul>
+					<li>Employment</li>
+					<li>Practice culture</li>
+					<li>Terms</li>
+					<li>Site map</li>
+					<li>Contact us</li>
+				</ul>
+				<img id="riba" src="IMG/footer-riba.png" style="width: 82px; height: 18px;"/>
+				<div id="contact">
+                       	<div id="twitter" >
+                            <img src="IMG/twitter.png">
+                        </div>
+                        <div id="facebook">
+                            <i class="fa fa-facebook"></i>
+                        </div>
+                        <div id="behance">
+                            <i class="fa fa-behance"></i>
+                        </div>
+                        <div id="flickr">
+                            <img src="IMG/flickr.png">
+                        </div>
+                        <div id="pinterest">
+                            <i class="fa fa-pinterest-p"></i>
+                        </div>
+                        <div id="instagram">
+                            <i class="fa fa-instagram"></i>
+                        </div>
+                 </div>
+				<p>Copyright&#169;2006–2018 </p>
+				<p>Hyde + Hyde Architects</p>
+			</div>
+</article>
+<aside>
+	<div class="Menu">
+			<ul>
+				<li><a href="About.html">About</a>
+					<ul class="SubMenu">
+						<li><a href="People.html">People</a></li>
+						<li><a href="Sustainability.html">Sustainability</a></li>
+					</ul>
+				</li>
+				<li><a href="Projects.html">Projects</a>
+					<ul class="SubMenu">
+						<li><a href="Commercial.html">Commercial</a></li>
+						<li><a href="Cultural.html">Cultural</a></li>
+						<li><a href="Residental.html">Residental</a></li>
+					</ul>
+				</li>
+				<li><a href="Recognition.html">Recognition</a>
+					<ul class="SubMenu">
+						<li><a href="Award.html">Awards</a></li>
+						<li><a href="Exhibitions.html">Exhibitions</a></li>
+						<li><a href="Publications.html">Publications</a></li>
+					</ul>
+				</li>
+<!--
+				<li><a href="#">Blog</a>
+					<ul class="SubMenu">
+						<li><a href="#">Latest News</a></li>
+						<li><a href="#">Reaching/Teaching</a></li>
+					</ul>
+				</li>
+-->
+				<li><a href="Contact.html">Contact</a></li>
+			</ul>
+		</div>
+		<div class="UnderMenu">
+			<ul>
+				<li><a href="AlvarAaltoMuseum.html">Alvar Aalto Museum</a></li>
+				<li><a href="GhostTrain.html">Ghost Train</a></li>
+				<li><a href="TheSlipBridge.html">The Slip Bridge</a></li>
+				<li><a href="MoorCafeBar.html">Moor Cafe Bar</a></li>
+			</ul>
+		</div>
+		<div id="Project">
+			<p>Category</p>
+			<p class="P">Project</p>
+			<p class="L">Location</p>
+			<p class="Y">Year</p>
+		</div>
+		<div id="Project2">
+			<p>Commercial</p>
+			<p class="P">Ghost Train</p>
+			<p class="L">Swansea</p>
+			<p class="Y">2012</p>
+		</div>
+		<div id="House">
+			<div id="Image">
+				<img src="IMG/Project/Cultural/Ghost train/01.jpg" />
+				<img src="IMG/Project/Cultural/Ghost train/02.jpg" />
+				<img src="IMG/Project/Cultural/Ghost train/03.jpg" />
+				<img src="IMG/Project/Cultural/Ghost train/04.jpg" />
+			</div>
+			<div id="Info">
+				<h4>The Ghost Train takes inspiration from an old abandoned railway bridge in the City of Swansea.</h4><br>
+				<p>Imagine something which was once lost, a railway bridge that was once critical to the prosperity of a city.</p><br>
+				<p>Like a ghost – the new proposal with an exciting programme and unique form, captures the spirit and movement of the coal trains that once passed alongside it.</p><br>
+				<p>A new platform is proposed across the River Tawe using the existing abandoned bridge supports on which we propose; a small park, a rowing club for the University, a flexible performance space and a community hall – bringing communities together.</p><br>
+				<div id="Info2">
+					<h4>Recognition</h4><br>
+					<h4>+Exhibited for Adain Avion</h4>
+					<p>A mobile art space, part of the UK Cultural Olympiad 2012</p><br>
+					<h4>+Waterfront Museum</h4>
+					<p>Exhibited 2012</p><br>
+				</div>
+				<div>
+					<h4>See also</h4><br>
+					<a href="SilverHouse.html" class="link">+The Silver House</a>
+				</div>
+			</div>
+		</div>
+	</aside>
+	<button id="myBtn" title="Go to top"></button>
+	<script>
+        //Khi người dùng cuộn chuột thì gọi hàm scrollFunction
+        window.onscroll = function() {scrollFunction()};
+        // khai báo hàm scrollFunction
+        function scrollFunction() {
+            // Kiểm tra vị trí hiện tại của con trỏ so với nội dung trang
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                //nếu lớn hơn 20px thì hiện button
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                 //nếu nhỏ hơn 20px thì ẩn button
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+        //gán sự kiện click cho button
+        document.getElementById('myBtn').addEventListener("click", function(){
+            //Nếu button được click thì nhảy về đầu trang
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        });
+    </script>
+</body>
+</html>

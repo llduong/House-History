@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sustainability</title>
+<link rel="stylesheet" href="CSS/StyleSustainability.css" />
+<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+<link rel="icon" href="IMG/Icon.png" />
+</head>
+
+<body>
+<article>
+	<a href="Index.html"><img class="Logo" src="IMG/symbol1.png" /></a>
+			<a href="Index.html"><img class="HHLogo" src="IMG/hh-logo.png" /></a>
+			<div class="Advertise">
+				<ul>
+					<li>Employment</li>
+					<li>Practice culture</li>
+					<li>Terms</li>
+					<li>Site map</li>
+					<li>Contact us</li>
+				</ul>
+				<img id="riba" src="IMG/footer-riba.png" style="width: 82px; height: 18px;"/>
+				<div id="contact">
+                        <div id="twitter" >
+                            <img src="IMG/twitter.png">
+                        </div>
+                        <div id="facebook">
+                            <i class="fa fa-facebook"></i>
+                        </div>
+                        <div id="behance">
+                            <i class="fa fa-behance"></i>
+                        </div>
+                        <div id="flickr">
+                            <img src="IMG/flickr.png">
+                        </div>
+                        <div id="pinterest">
+                            <i class="fa fa-pinterest-p"></i>
+                        </div>
+                        <div id="instagram">
+                            <i class="fa fa-instagram"></i>
+                        </div>
+                 </div>
+				<p>Copyright&#169;2006–2018 </p>
+				<p>Hyde + Hyde Architects</p>
+			</div>
+</article>
+<aside>
+	<div class="Menu">
+			<ul>
+				<li><a href="About.html">About</a>
+					<ul class="SubMenu">
+						<li><a href="People.html">People</a></li>
+						<li><a href="Sustainability.html">Sustainability</a></li>
+					</ul>
+				</li>
+				<li><a href="Projects.html">Projects</a>
+					<ul class="SubMenu">
+						<li><a href="Commercial.html">Commercial</a></li>
+						<li><a href="Cultural.html">Cultural</a></li>
+						<li><a href="Residental.html">Residental</a></li>
+					</ul>
+				</li>
+				<li><a href="Recognition.html">Recognition</a>
+					<ul class="SubMenu">
+						<li><a href="Award.html">Awards</a></li>
+						<li><a href="Exhibitions.html">Exhibitions</a></li>
+						<li><a href="Publications.html">Publications</a></li>
+					</ul>
+				</li>
+<!--
+				<li><a href="#">Blog</a>
+					<ul class="SubMenu">
+						<li><a href="#">Latest News</a></li>
+						<li><a href="#">Reaching/Teaching</a></li>
+					</ul>
+				</li>
+-->
+				<li><a href="Contact.html">Contact</a></li>
+			</ul>
+			</div>
+		<div class="UnderMenu">
+			<p>Our aim is to produce beautiful, sustainable environments that endure, and to demonstrate how good design is compatible with economic, social and environmental well being.</p>
+		</div>
+		<div class="content">
+			<div class="Paragraph">
+				<h4>Sustainable Architecture</h4>
+				<p>From the very beginning we guide our clients through the complex maze of alternative choices with regard to sustainability, ensuring value and lower running costs. Without compromising architectural integrity.</p><br>
+				<p>At Hyde + Hyde each project is assessed on an individual basis to determine the most appropriate sustainable strategies. Passive strategies are first considered </p>
+			</div>
+			<div class="Paragraph">
+				<br><p>before suggesting technological solutions.</p><br>
+				<p>If you are interested in learning more, general information and links relating to sustainable design and current government legislation can be found below:</p>
+				<h4>RIBA</h4>
+				<p>Sustainability and climate change at the <a href="#">Royal Institute of British Architects</a></p>
+			</div>
+			<div class="Paragraph">
+				<h4>Guidance + Publications</h4>
+				<p><a href="#">+BREEAM</a></p>
+				<p><a href="#">+Department of Energy + Climate Change</a></p>
+				<p><a href="#">+Passivhaus</a></p>
+			</div>
+		</div>
+	</aside>
+	<button id="myBtn" title="Go to top"></button>
+	<script>
+        //Khi người dùng cuộn chuột thì gọi hàm scrollFunction
+        window.onscroll = function() {scrollFunction()};
+        // khai báo hàm scrollFunction
+        function scrollFunction() {
+            // Kiểm tra vị trí hiện tại của con trỏ so với nội dung trang
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                //nếu lớn hơn 20px thì hiện button
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                 //nếu nhỏ hơn 20px thì ẩn button
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+        //gán sự kiện click cho button
+        document.getElementById('myBtn').addEventListener("click", function(){
+            //Nếu button được click thì nhảy về đầu trang
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Publications</title>
+<link rel="stylesheet" href="CSS/StylePublications.css" />
+<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+<link rel="icon" href="IMG/Icon.png" />
+</head>
+
+<body>
+<article>
+	<a href="Index.html"><img class="Logo" src="IMG/symbol1.png" /></a>
+			<a href="Index.html"><img class="HHLogo" src="IMG/hh-logo.png" /></a>
+			<div class="Advertise">
+				<ul>
+					<li>Employment</li>
+					<li>Practice culture</li>
+					<li>Terms</li>
+					<li>Site map</li>
+					<li>Contact us</li>
+				</ul>
+				<img id="riba" src="IMG/footer-riba.png" style="width: 82px; height: 18px;" />
+				<div id="contact">
+                        <div id="twitter" >
+                            <img src="IMG/twitter.png">
+                        </div>
+                        <div id="facebook">
+                            <i class="fa fa-facebook"></i>
+                        </div>
+                        <div id="behance">
+                            <i class="fa fa-behance"></i>
+                        </div>
+                        <div id="flickr">
+                            <img src="IMG/flickr.png">
+                        </div>
+                        <div id="pinterest">
+                            <i class="fa fa-pinterest-p"></i>
+                        </div>
+                        <div id="instagram">
+                            <i class="fa fa-instagram"></i>
+                        </div>
+                 </div>
+				<p>Copyright&#169;2006–2018 </p>
+				<p>Hyde + Hyde Architects</p>
+			</div>
+</article>
+<aside>
+	<div class="Menu">
+			<ul>
+				<li><a href="About.html">About</a>
+					<ul class="SubMenu">
+						<li onMouseOver="MouseOver(this)" onMouseOut="MouseOut(this)"><a href="People.html">People</a></li>
+						<li><a href="Sustainability.html">Sustainability</a></li>
+					</ul>
+				</li>
+				<li><a href="Projects.html">Projects</a>
+					<ul class="SubMenu">
+						<li><a href="Commercial.html">Commercial</a></li>
+						<li><a href="Cultural.html">Cultural</a></li>
+						<li><a href="Residental.html">Residental</a></li>
+					</ul>
+				</li>
+				<li><a href="Recognition.html">Recognition</a>
+					<ul class="SubMenu">
+						<li><a href="Award.html">Awards</a></li>
+						<li><a href="Exhibitions.html">Exhibitions</a></li>
+						<li><a href="Publications.html">Publications</a></li>
+					</ul>
+				</li>
+<!--
+				<li><a href="#">Blog</a>
+					<ul class="SubMenu">
+						<li><a href="#">Latest News</a></li>
+						<li><a href="#">Reaching/Teaching</a></li>
+					</ul>
+				</li>
+-->
+				<li><a href="Contact.html">Contact</a></li>
+			</ul>
+		</div>
+		<div class="UnderMenu"></div>
+		<div id="Product">
+			<div class="Recognition">
+				<div class="Background">
+					<img src ="IMG/Recoginition IMG/The Times (2).jpg" />
+				</div>
+				<div class="Info">
+					<p class="Time">16/06/2013</p> 
+					<p class="Award">Sunday Times</p>
+				</div>
+				<p class="Paragraph">Copper House on the cover of the Sunday Times Home Supplement. Box of delights “One of the best homes in Britain”.</p>
+			</div>
+			<div class="Recognition">
+				<div class="Background">
+					<img src="IMG/Recoginition IMG/Guardian Homeworks Magazine(8).jpg" />
+				</div>
+				<div class="Info">
+					<p class="Time">25/10/2010</p> 
+					<p class="Award">Guardian Homeworks Magazine</p>
+				</div>
+				<p class="Paragraph">Pennard House by Hyde + Hyde Architects on the cover of the Guardian, Homeworks Magazine. For more information please download the full magazine article below</p>
+				<div class="Download">
+					<a href="#">+Download PDF</a>
+				</div>
+			</div>
+			<div class="Recognition">
+				<div class="Background">
+					<img src="IMG/Recoginition IMG/The Chapel of the Holy Wash(10).jpg" />
+				</div>
+				<div class="Info">
+					<p class="Time">01/01/2008</p> 
+					<p class="Award">The Chapel of the Holy Wash</p>
+				</div>
+				<p class="Paragraph">A project by Hyde + Hyde architects for a chapel at Oxwich Point on the Gower Peninsula was exhibited at the RIBA in 2002. Kristian Hyde gives a personal and reflective account of the scheme and the thinking behind its conception.</p>
+			</div>
+			<div class="Recognition">
+				<div class="Background">
+					<img src="IMG/Recoginition IMG/Representational Drawing(13).jpg" />
+				</div>
+				<div class="Info">
+					<p class="Time">18/11/2007 </p> 
+					<p class="Award">Representational Drawing</p>
+				</div>
+				<p class="Paragraph">Design work by Hyde + Hyde architects has been included in a new book by Lorraine Farrelly. The book is an overview of techniques used by leading professionals to communicate architectural ideas.</p>
+			</div>
+		</div>
+	</aside>
+	<button id="myBtn" title="Go to top"></button>
+	<script>
+        //Khi người dùng cuộn chuột thì gọi hàm scrollFunction
+        window.onscroll = function() {scrollFunction()};
+        // khai báo hàm scrollFunction
+        function scrollFunction() {
+            // Kiểm tra vị trí hiện tại của con trỏ so với nội dung trang
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                //nếu lớn hơn 20px thì hiện button
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                 //nếu nhỏ hơn 20px thì ẩn button
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+        //gán sự kiện click cho button
+        document.getElementById('myBtn').addEventListener("click", function(){
+            //Nếu button được click thì nhảy về đầu trang
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        });
+    </script>
+</body>
+</html>

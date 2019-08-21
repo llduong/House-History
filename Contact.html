@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Contact</title>
+<link rel="stylesheet" href="CSS/StyleContact.css" />
+<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+<link rel="icon" href="IMG/Icon.png" />
+<style>
+	p{
+		font-family: ge
+	}
+	
+	</style>
+<script>
+	function Check(){
+		var Name = document.form.Name.value;
+		if (checkName() != -1 && checkTel() != -1 && checkEmail() != -1 ){
+			alert("Thanks for your visit " + Name);
+			window.location = "Index.html";
+		}else{
+			alert("Your info is wrong or missing");
+		}
+	}
+	function checkName(){
+		var Name = document.form.Name.value;
+		if(Name == ''){
+			return -1;
+		}else{
+			return 1;
+		}
+	}
+	function checkTel(){
+		var Tel = document.form.tel.value;
+		var check = /^[0-9-+]/;
+		if(!check.test(Tel)){
+			return -1;
+		}else{
+			return 1;
+		}
+	}
+	function checkEmail(){
+		var Email = document.getElementById("Email");
+		var check = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+		if(!check.test(Email.value)){
+			return -1;
+		}else{
+			return 1;
+		}
+	}
+	</script>
+</head>
+
+<body>
+	<article>
+			<a href="Index.html"><img class="Logo" src="IMG/symbol1.png" /></a>
+			<a href="Index.html"><img class="HHLogo" src="IMG/hh-logo.png" /></a>
+			<div class="Advertise">
+				<ul>
+					<li>Employment</li>
+					<li>Practice culture</li>
+					<li>Terms</li>
+					<li>Site map</li>
+					<li>Contact us</li>
+				</ul>
+				<img id="riba" src="IMG/footer-riba.png" style="width: 82px; height: 18px;" />
+				<div id="contact">
+                        <div id="twitter" >
+                            <img src="IMG/twitter.png">
+                        </div>
+                        <div id="facebook">
+                            <i class="fa fa-facebook"></i>
+                        </div>
+                        <div id="behance">
+                            <i class="fa fa-behance"></i>
+                        </div>
+                        <div id="flickr">
+                            <img src="IMG/flickr.png">
+                        </div>
+                        <div id="pinterest">
+                            <i class="fa fa-pinterest-p"></i>
+                        </div>
+                        <div id="instagram">
+                            <i class="fa fa-instagram"></i>
+                        </div>
+                 </div>
+				<p>Copyright&#169;2006–2018 </p>
+				<p>Hyde + Hyde Architects</p>
+			</div>
+	</article>
+	<aside>
+		<div class="Menu">
+			<ul>
+				<li><a href="About.html">About</a>
+					<ul class="SubMenu">
+						<li><a href="People.html">People</a></li>
+						<li><a href="Sustainability.html">Sustainability</a></li>
+					</ul>
+				</li>
+				<li><a href="Projects.html">Projects</a>
+					<ul class="SubMenu">
+						<li><a href="Commercial.html">Commercial</a></li>
+						<li><a href="Cultural.html">Cultural</a></li>
+						<li><a href="Residental.html">Residental</a></li>
+					</ul>
+				</li>
+				<li><a href="Recognition.html">Recognition</a>
+					<ul class="SubMenu">
+						<li><a href="Award.html">Awards</a></li>
+						<li><a href="Exhibitions.html">Exhibitions</a></li>
+						<li><a href="Publications.html">Publications</a></li>
+					</ul>
+				</li>
+<!--
+				<li><a href="#">Blog</a>
+					<ul class="SubMenu">
+						<li><a href="#">Latest News</a></li>
+						<li><a href="#">Reaching/Teaching</a></li>
+					</ul>
+				</li>
+-->
+				<li><a href="Contact.html">Contact</a></li>
+			</ul>
+		</div>
+		<div class="UnderMenu">
+			<p>To find out more about the ways Hyde + Hyde Architects can work with you, on projects large and small, wherever you are in the world, please get in touch using the form below.</p>
+		</div>
+		<div class="Location">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2477.2492615165415!2d-3.943453684225942!3d51.61864297965355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486ef54ac227f0b5%3A0x37a72bce1a679593!2sHyde+%2B+Hyde+Architects!5e0!3m2!1sen!2s!4v1532009551583" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<h4><b>Swansea</b></h4>
+			<p>Hyde + Hyde Architects</p>
+			<p>Royal Buildings</p>
+			<p>10 Princess Way</p>
+			<p>Swansea</p>
+			<p>SA1 3LW</p><br>
+			<p>t +44 (0) 1792 420 838</p><br>
+			<p>Press and publicity enquiries to:</p>
+			<p><a href="#">press@hydearchitects.com</a></p>
+		</div>
+		<div class="Location">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9938.222625554268!2d-3.178911!3d51.48467!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486e1ca64d4ae0eb%3A0x92628f6cf42c9319!2sHyde+%2B+Hyde+Architects!5e0!3m2!1sen!2suk!4v1532009409993" width="600" height="450" frameborder="0" style="border:0; width: 469px; height: 359px;" allowfullscreen></iframe>
+			<h4><b>Cardiff</b></h4>
+			<p>Hyde + Hyde Architects</p>
+			<p>Sophia House</p>
+			<p>28 Cathedral Road</p>
+			<p>Cardiff</p>
+			<p>CF11 9LJ</p><br>
+		</div>
+		<div class="Location">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2435.6131092594565!2d4.881534315802167!3d52.37743497978749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609c5513ac87b%3A0xde2235b916ca82ba!2sEerste+Tuindwarsstraat+16%2C+1015+RT+Amsterdam%2C+Netherlands!5e0!3m2!1sen!2s!4v1532009591637" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<h4><b>Amsterdam</b></h4>
+			<p style="font: green;">Hyde + Hyde Architects</p>
+			<p>Eerste Tuindwarsstraat 16 HS</p>
+			<p>1015 RV</p>
+			<p>Amsterdam</p>
+			<p>Netherlands</p><br>
+		</div>
+		<div class="Footer">
+			<form action="#" method="post" name="form">
+				<input type="text" id="Name" name="Name" placeholder="Name" style="width: 210px; height: 20px;" /><br>
+				<input type="email" id="Email" name="Email" placeholder="Email" style="width: 210px; height: 20px;" /><br>
+				<input type="tel" id="Tel" name="tel" placeholder="Tel" maxlength="14" style="width: 210px; height: 20px;"/><br>
+				<textarea name="message" rows="20" cols="50" placeholder="Brief project description" maxlength="1000" style="width: 210px;"></textarea>
+			</form>
+			<button onClick="Check()" id="Button" style="width: 50px; height: 20px;">Send</button>
+		</div>
+	</aside>
+</body>
+</html>
