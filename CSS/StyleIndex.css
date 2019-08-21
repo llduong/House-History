@@ -1,0 +1,311 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin: 0px;
+	width: 100%;
+	height: auto;
+}
+.container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+#Slideshow{
+	background-color: black;
+	width: 100%;
+	height: 635px;
+}
+#Header{
+	width: 100%;
+	height: 300px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.Logo{
+	position: relative;
+	top: 30px;
+	left: 170px;
+	height: 60px;
+	width: 60px;
+}
+.HHLogo{
+	position: relative;
+	top: 180px;
+	left: 105px;
+	width: 143px;
+	height: 20px;
+}
+.Menu{
+	width: 65%;
+	height: 150px;
+	margin: 0px;
+	position: relative;
+	top: -65px;
+	left: 300px;
+	padding-left:150px;
+}
+.Menu>ul{
+	text-align: left;
+	padding-top: 30px;
+	display: block;
+	line-height: 20px;
+	margin-left: -35px;
+}
+.Menu ul li {
+	display: inline-table;
+	width: 146px;
+	border-top: 1px solid #CCC;
+	font-size: 17px;
+	padding-right: 38px;
+}
+.Menu ul li a{
+	text-decoration: none;
+	color: white;
+}
+.SubMenu{
+	text-align: left;
+	margin-left: -40px;
+	display: none;
+}
+.Menu>ul>li:hover .SubMenu{
+	display: block;
+}
+.Menu>ul>li:hover{
+	border-top: 1px solid greenyellow;
+}
+.Menu ul li:hover>a{
+	color: greenyellow;
+}
+.SubMenu>li:hover{
+	border-top: 1px solid greenyellow;
+}
+.Advertise {
+	position: relative;
+	top: 18px;
+	width: 130px;
+	left: 145px;
+	height: 220px;
+	background-color: black;
+}
+.Advertise ul li{
+	list-style-type: none;
+	margin-left: -18px;
+	margin-top: 2px;
+	border-top: 1px solid #CCC;
+	color: white;
+	font-size: 14px;
+	opacity: 1;
+}
+#riba{
+	margin-left: 20px;
+	margin-top: 12px;
+}
+#contact {
+    height: 20px;
+    margin-top: 13px;
+    margin-left: 18px;
+}
+#twitter {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    background-color: white;
+    border-radius: 50%;
+    float: left;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+#twitter img {
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+#facebook {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    background-color: white;
+    border-radius: 50%;
+    float: left;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+#facebook i {
+    position: absolute;
+    margin-top: 2px;
+    margin-left: 5px;
+    color: grey;
+    font-size: 14px;
+}
+#behance {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    background-color: white;
+    border-radius: 50%;
+    float: left;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+#behance i {
+    position: absolute;
+    margin-top: 3px;
+    margin-left: 2px;
+    color: grey;
+    font-size: 12px;
+}
+#flickr {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    background-color: white;
+    border-radius: 50%;
+    float: left;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+#flickr img{
+    position: absolute;
+    margin-top: 1px;
+    margin-left: 0px;
+}
+#pinterest {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    background-color: white;
+    border-radius: 50%;
+    float: left;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+#pinterest i {
+    position: absolute;
+    margin-top: 2px;
+    margin-left: 3px;
+    color: grey;
+    font-size: 15px;
+}
+#instagram {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    background-color: white;
+    border-radius: 50%;
+    float: left;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+#instagram i {
+    position: absolute;
+    margin-top: 2px;
+    margin-left: 3px;
+    color: grey;
+    font-size: 14px;
+}
+.Advertise p{
+	color: white;
+	font-size: 13px;
+	margin-top: 3px;
+	margin-left: 20px;
+}
+#Footer{
+	opacity: 0.6;
+	background-color: black;
+	width: 100%;
+	height: 265px;
+	position: absolute;
+	top: 370px;
+}
+#Blog{
+	float: right;
+	position: relative;
+	width: 300px;
+	height: 200px;
+	background-color: black;
+	top: -205px;
+	right: 550px;
+	border-top: 1px solid #CCC;
+}
+#Blog h4{
+	margin-bottom: 5px;
+	color: white;
+	font-weight: bold;
+}
+#Blog a{
+	text-decoration: none;
+	color: #CCC;
+	text-align: justify;
+}
+#Blog a:hover{
+	color: white;
+	font-weight: bold;
+}
+#NearBlog{
+	height: 200px;
+	background-color: black;
+	width: 300px;
+	float: right;
+	position: relative;
+	top: -205px;
+	right: -80px;
+}
+#News{
+	border-top: 1px solid #CCC;
+	height: 50%;
+	width: 100%;
+}
+#News a{
+	text-decoration: none;
+	color: #CCC;
+	text-align: justify;
+}
+#News h4{
+	color: white;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+#News a:hover{
+	color: white;
+	font-weight: bold;
+}
+#Twitter{
+	border-top: 1px solid #CCC;
+	height: 50%;
+	width: 100%;
+}
+#Twitter h4{
+	margin-bottom: 5px;
+	color: white;
+	font-weight: bold;
+}
+#Twitter a{
+	color: #CCC;
+	text-decoration: none;
+}
+#Twitter a:hover{
+	color: white;
+	font-weight: bold;
+}
+#Twitter p{
+	color: #CCC;
+	text-align: justify;
+}
+/*
+
+#fake{
+	background-color: white;
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+}
+#fake p{
+	margin-left: 4px;
+	margin-top: 1px;
+}
+*/
